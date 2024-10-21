@@ -41,6 +41,6 @@ jobs:
             sudo docker pull maxikboldarev1394/valerafinbaron_bot
             sudo nohup docker run -d -it \
             -e API_TOKEN=${{ secrets.API_TOKEN }} \
-            -v /home/Максим/app_data:/app/app_data \
+            -v /home/boldarev/app_data:/app/app_data \
             --name main_container \
             maxikboldarev1394/valerafinbaron_bot
