@@ -24,7 +24,7 @@ storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
 
-with open('./app_data/help.txt', 'r', encoding='utf-8') as file:
+with open('./help.txt', 'r', encoding='utf-8') as file:
     help = file.read()
 
 
