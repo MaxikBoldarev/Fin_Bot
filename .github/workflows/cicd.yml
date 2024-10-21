@@ -35,6 +35,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo docker stop main_container
             sudo docker system prune -a -f
