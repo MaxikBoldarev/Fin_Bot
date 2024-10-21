@@ -16,8 +16,8 @@ class StockInfo:
     def info_moex(self):
         url = f'http://iss.moex.com/iss/engines/stock/markets/shares/securities/{self.message}.xml'
         pages = requests.get(url, timeout=10, headers=self.headers)
-        soup = BeautifulSoup(pages.text, 'xml')
-        info = (soup.find(id="marketdata")).find(BOARDID="TQBR")
+        soup = BeautifulSoup(pages.text, 'xml') 
+        info = (soup.find(id="marketdata").find(BOARDID="TQBR"))
         if info:
             try:
                 ticker = self.message

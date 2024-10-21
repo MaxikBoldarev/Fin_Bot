@@ -91,7 +91,7 @@ class CurrencyInfo:
         pages = requests.get(url, timeout=10, headers=self.headers)
         soup = BeautifulSoup(pages.text, 'xml')
         if self.moex_dict.get(self.message):
-            info = ((soup.find(id="marketdata")).find_all('row'))
+            info = (soup.find(id="marketdata").find_all('row'))
             lasts = [i.get('LAST') for i in info if len(i.get('LAST')) != 0]
             opens = [i.get('OPEN') for i in info if len(i.get('OPEN')) != 0]
             try:

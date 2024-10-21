@@ -3,6 +3,7 @@ import unittest
 import main as bot
 import sqlite3
 import stock
+from unittest.mock import patch, MagicMock, PropertyMock
 
 #Test класса User
 class UserTestCase(unittest.TestCase):
@@ -38,6 +39,24 @@ class UserTestCase(unittest.TestCase):
 
 #Тест класса Stock
 class TestStockInfo(unittest.TestCase):
+
+    @patch('requests.get')
+    def test_info_moex_success(self, mock_get):
+        # Создаем фейковый XML-ответ
+        with open('stock.xml', 'r', encoding='utf-8') as file:
+            help = file.read()
+        # Настраиваем mock для возврата фейкового ответа
+            mock_get.return_value = MagicMock(status_code=200, text=help)
+        
+        # Создаем экземпляр класса, содержащего метод info_moex
+        instance = stock.StockInfo('SBER') 
+
+        # Вызываем метод
+        instance.info_moex()
+
+        # Проверяем, что метод вернул ожидаемые значения
+        self.assertEqual("\nPrice: <b>258.21</b> RUB", instance.price)
+
 
     def tearDown(self) -> None:
         conn = sqlite3.connect('./app_data/database.db')
@@ -82,6 +101,23 @@ class TestCurrencyInfo(unittest.TestCase):
     test_url = f'https://iss.moex.com/iss/engines/currency/markets/selt/securities/KZTRUB_TOM.xml' 
                 
     test_response = {'KZTRUB_TOM'}
+    
+    @patch('requests.get')
+    def test_info_moex_success(self, mock_get):
+        # Создаем фейковый XML-ответ
+        with open('currency.xml', 'r', encoding='utf-8') as file:
+            help = file.read()
+        # Настраиваем mock для возврата фейкового ответа
+            mock_get.return_value = MagicMock(status_code=200, text=help)
+        
+        # Создаем экземпляр класса, содержащего метод info_moex
+        instance = bot.CurrencyInfo('KZT') 
+
+        # Вызываем метод
+        instance.info_moex()
+
+        # Проверяем, что метод вернул ожидаемые значения
+        self.assertEqual("\nPrice: <b>19.975</b> RUB", instance.price)
 
 
     def tearDown(self) -> None:
