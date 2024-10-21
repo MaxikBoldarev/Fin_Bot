@@ -1,0 +1,127 @@
+<document>
+<data id="securities">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="SHORTNAME" type="string" bytes="30" max_size="0"/>
+<column name="PREVPRICE" type="double"/>
+<column name="LOTSIZE" type="int32"/>
+<column name="FACEVALUE" type="double"/>
+<column name="STATUS" type="string" bytes="3" max_size="0"/>
+<column name="BOARDNAME" type="string" bytes="381" max_size="0"/>
+<column name="DECIMALS" type="int32"/>
+<column name="SECNAME" type="string" bytes="90" max_size="0"/>
+<column name="REMARKS" type="string" bytes="24" max_size="0"/>
+<column name="MARKETCODE" type="string" bytes="12" max_size="0"/>
+<column name="INSTRID" type="string" bytes="12" max_size="0"/>
+<column name="SECTORID" type="string" bytes="12" max_size="0"/>
+<column name="MINSTEP" type="double"/>
+<column name="PREVWAPRICE" type="double"/>
+<column name="FACEUNIT" type="string" bytes="12" max_size="0"/>
+<column name="PREVDATE" type="date" bytes="10" max_size="0"/>
+<column name="ISSUESIZE" type="int64"/>
+<column name="ISIN" type="string" bytes="36" max_size="0"/>
+<column name="LATNAME" type="string" bytes="90" max_size="0"/>
+<column name="REGNUMBER" type="string" bytes="90" max_size="0"/>
+<column name="PREVLEGALCLOSEPRICE" type="double"/>
+<column name="CURRENCYID" type="string" bytes="12" max_size="0"/>
+<column name="SECTYPE" type="string" bytes="3" max_size="0"/>
+<column name="LISTLEVEL" type="int32"/>
+<column name="SETTLEDATE" type="date" bytes="10" max_size="0"/>
+</columns>
+</metadata>
+<rows>
+<row SECID="SBER" BOARDID="SMAL" SHORTNAME="Сбербанк" PREVPRICE="257.83" LOTSIZE="1" FACEVALUE="3" STATUS="A" BOARDNAME="Т+: Неполные лоты (акции) - безадрес." DECIMALS="2" SECNAME="Сбербанк России ПАО ао" REMARKS="" MARKETCODE="FNDT" INSTRID="EQIN" SECTORID="" MINSTEP="0.01" PREVWAPRICE="256.26" FACEUNIT="SUR" PREVDATE="2024-10-18" ISSUESIZE="21586948000" ISIN="RU0009029540" LATNAME="Sberbank" REGNUMBER="10301481B" PREVLEGALCLOSEPRICE="" CURRENCYID="SUR" SECTYPE="1" LISTLEVEL="1" SETTLEDATE="2024-10-22"/>
+<row SECID="SBER" BOARDID="SPEQ" SHORTNAME="Сбербанк" PREVPRICE="264.99" LOTSIZE="1" FACEVALUE="3" STATUS="A" BOARDNAME="Поставка по СК (акции)" DECIMALS="6" SECNAME="Сбербанк России ПАО ао" REMARKS="" MARKETCODE="RPST" INSTRID="EQIN" SECTORID="" MINSTEP="0.000001" PREVWAPRICE="" FACEUNIT="SUR" PREVDATE="2024-10-18" ISSUESIZE="21586948000" ISIN="RU0009029540" LATNAME="Sberbank" REGNUMBER="10301481B" PREVLEGALCLOSEPRICE="" CURRENCYID="SUR" SECTYPE="1" LISTLEVEL="1" SETTLEDATE="2024-10-22"/>
+<row SECID="SBER" BOARDID="TQBR" SHORTNAME="Сбербанк" PREVPRICE="257.19" LOTSIZE="10" FACEVALUE="3" STATUS="A" BOARDNAME="Т+: Акции и ДР - безадрес." DECIMALS="2" SECNAME="Сбербанк России ПАО ао" REMARKS="" MARKETCODE="FNDT" INSTRID="EQIN" SECTORID="" MINSTEP="0.01" PREVWAPRICE="256.26" FACEUNIT="SUR" PREVDATE="2024-10-18" ISSUESIZE="21586948000" ISIN="RU0009029540" LATNAME="Sberbank" REGNUMBER="10301481B" PREVLEGALCLOSEPRICE="256.6" CURRENCYID="SUR" SECTYPE="1" LISTLEVEL="1" SETTLEDATE="2024-10-22"/>
+</rows>
+</data>
+<data id="marketdata">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="BID" type="double"/>
+<column name="BIDDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFER" type="double"/>
+<column name="OFFERDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="SPREAD" type="double"/>
+<column name="BIDDEPTHT" type="int32"/>
+<column name="OFFERDEPTHT" type="int32"/>
+<column name="OPEN" type="double"/>
+<column name="LOW" type="double"/>
+<column name="HIGH" type="double"/>
+<column name="LAST" type="double"/>
+<column name="LASTCHANGE" type="double"/>
+<column name="LASTCHANGEPRCNT" type="double"/>
+<column name="QTY" type="int32"/>
+<column name="VALUE" type="double"/>
+<column name="VALUE_USD" type="double"/>
+<column name="WAPRICE" type="double"/>
+<column name="LASTCNGTOLASTWAPRICE" type="double"/>
+<column name="WAPTOPREVWAPRICEPRCNT" type="double"/>
+<column name="WAPTOPREVWAPRICE" type="double"/>
+<column name="CLOSEPRICE" type="double"/>
+<column name="MARKETPRICETODAY" type="double"/>
+<column name="MARKETPRICE" type="double"/>
+<column name="LASTTOPREVPRICE" type="double"/>
+<column name="NUMTRADES" type="int32"/>
+<column name="VOLTODAY" type="int64"/>
+<column name="VALTODAY" type="int64"/>
+<column name="VALTODAY_USD" type="int64"/>
+<column name="ETFSETTLEPRICE" type="double"/>
+<column name="TRADINGSTATUS" type="string" bytes="3" max_size="0"/>
+<column name="UPDATETIME" type="time" bytes="10" max_size="0"/>
+<column name="LASTBID" type="undefined" bytes="0" max_size="0"/>
+<column name="LASTOFFER" type="undefined" bytes="0" max_size="0"/>
+<column name="LCLOSEPRICE" type="double"/>
+<column name="LCURRENTPRICE" type="double"/>
+<column name="MARKETPRICE2" type="double"/>
+<column name="NUMBIDS" type="undefined" bytes="0" max_size="0"/>
+<column name="NUMOFFERS" type="undefined" bytes="0" max_size="0"/>
+<column name="CHANGE" type="double"/>
+<column name="TIME" type="time" bytes="10" max_size="0"/>
+<column name="HIGHBID" type="undefined" bytes="0" max_size="0"/>
+<column name="LOWOFFER" type="undefined" bytes="0" max_size="0"/>
+<column name="PRICEMINUSPREVWAPRICE" type="double"/>
+<column name="OPENPERIODPRICE" type="double"/>
+<column name="SEQNUM" type="int64"/>
+<column name="SYSTIME" type="datetime" bytes="19" max_size="0"/>
+<column name="CLOSINGAUCTIONPRICE" type="double"/>
+<column name="CLOSINGAUCTIONVOLUME" type="double"/>
+<column name="ISSUECAPITALIZATION" type="double"/>
+<column name="ISSUECAPITALIZATION_UPDATETIME" type="time" bytes="10" max_size="0"/>
+<column name="ETFSETTLECURRENCY" type="string" bytes="18" max_size="0"/>
+<column name="VALTODAY_RUR" type="int64"/>
+<column name="TRADINGSESSION" type="string" bytes="3" max_size="0"/>
+<column name="TRENDISSUECAPITALIZATION" type="double"/>
+</columns>
+</metadata>
+<rows>
+<row SECID="SBER" BOARDID="SMAL" BID="" BIDDEPTH="" OFFER="" OFFERDEPTH="" SPREAD="0" BIDDEPTHT="0" OFFERDEPTHT="0" OPEN="257.83" LOW="256.65" HIGH="259.87" LAST="258.99" LASTCHANGE="0" LASTCHANGEPRCNT="0" QTY="1" VALUE="258.99" VALUE_USD="2.69" WAPRICE="258.39" LASTCNGTOLASTWAPRICE="0" WAPTOPREVWAPRICEPRCNT="0.83" WAPTOPREVWAPRICE="2.13" CLOSEPRICE="" MARKETPRICETODAY="258.39" MARKETPRICE="256.22" LASTTOPREVPRICE="0.45" NUMTRADES="1140" VOLTODAY="2328" VALTODAY="601993" VALTODAY_USD="6244" ETFSETTLEPRICE="" TRADINGSTATUS="N" UPDATETIME="23:50:06" LASTBID="" LASTOFFER="" LCLOSEPRICE="" LCURRENTPRICE="" MARKETPRICE2="" NUMBIDS="" NUMOFFERS="" CHANGE="1.16" TIME="23:41:36" HIGHBID="" LOWOFFER="" PRICEMINUSPREVWAPRICE="2.73" OPENPERIODPRICE="" SEQNUM="20241022000501" SYSTIME="2024-10-22 00:05:01" CLOSINGAUCTIONPRICE="" CLOSINGAUCTIONVOLUME="" ISSUECAPITALIZATION="5573965843080" ISSUECAPITALIZATION_UPDATETIME="23:49:50" ETFSETTLECURRENCY="" VALTODAY_RUR="601993" TRADINGSESSION="" TRENDISSUECAPITALIZATION="22018686960"/>
+<row SECID="SBER" BOARDID="SPEQ" BID="" BIDDEPTH="" OFFER="" OFFERDEPTH="" SPREAD="0" BIDDEPTHT="0" OFFERDEPTHT="0" OPEN="" LOW="" HIGH="" LAST="" LASTCHANGE="0" LASTCHANGEPRCNT="0" QTY="0" VALUE="0.00" VALUE_USD="0" WAPRICE="" LASTCNGTOLASTWAPRICE="0" WAPTOPREVWAPRICEPRCNT="0" WAPTOPREVWAPRICE="0" CLOSEPRICE="" MARKETPRICETODAY="258.39" MARKETPRICE="256.22" LASTTOPREVPRICE="0" NUMTRADES="0" VOLTODAY="0" VALTODAY="0" VALTODAY_USD="0" ETFSETTLEPRICE="" TRADINGSTATUS="N" UPDATETIME="19:42:51" LASTBID="" LASTOFFER="" LCLOSEPRICE="" LCURRENTPRICE="" MARKETPRICE2="" NUMBIDS="" NUMOFFERS="" CHANGE="" TIME="19:42:51" HIGHBID="" LOWOFFER="" PRICEMINUSPREVWAPRICE="" OPENPERIODPRICE="" SEQNUM="20241022000501" SYSTIME="2024-10-22 00:05:01" CLOSINGAUCTIONPRICE="" CLOSINGAUCTIONVOLUME="" ISSUECAPITALIZATION="5573965843080" ISSUECAPITALIZATION_UPDATETIME="23:49:50" ETFSETTLECURRENCY="" VALTODAY_RUR="0" TRADINGSESSION="" TRENDISSUECAPITALIZATION="22018686960"/>
+<row SECID="SBER" BOARDID="TQBR" BID="" BIDDEPTH="" OFFER="" OFFERDEPTH="" SPREAD="0" BIDDEPTHT="0" OFFERDEPTHT="0" OPEN="257.3" LOW="256.78" HIGH="259.85" LAST="258.21" LASTCHANGE="-0.04" LASTCHANGEPRCNT="-0.02" QTY="30" VALUE="77463.00" VALUE_USD="803.41" WAPRICE="258.39" LASTCNGTOLASTWAPRICE="1.95" WAPTOPREVWAPRICEPRCNT="0.83" WAPTOPREVWAPRICE="2.13" CLOSEPRICE="" MARKETPRICETODAY="258.39" MARKETPRICE="256.22" LASTTOPREVPRICE="0.4" NUMTRADES="66106" VOLTODAY="21471680" VALTODAY="5547686295" VALTODAY_USD="57538347" ETFSETTLEPRICE="" TRADINGSTATUS="N" UPDATETIME="23:50:06" LASTBID="" LASTOFFER="" LCLOSEPRICE="258.3" LCURRENTPRICE="258.27" MARKETPRICE2="258.39" NUMBIDS="" NUMOFFERS="" CHANGE="1.02" TIME="23:49:50" HIGHBID="" LOWOFFER="" PRICEMINUSPREVWAPRICE="1.95" OPENPERIODPRICE="258.12" SEQNUM="20241022000501" SYSTIME="2024-10-22 00:05:01" CLOSINGAUCTIONPRICE="258.3" CLOSINGAUCTIONVOLUME="18320" ISSUECAPITALIZATION="5573965843080" ISSUECAPITALIZATION_UPDATETIME="23:49:50" ETFSETTLECURRENCY="" VALTODAY_RUR="5547686295" TRADINGSESSION="" TRENDISSUECAPITALIZATION="22018686960"/>
+</rows>
+</data>
+<data id="dataversion">
+<metadata>
+<columns>
+<column name="data_version" type="int32"/>
+<column name="seqnum" type="int64"/>
+</columns>
+</metadata>
+<rows>
+<row data_version="8255" seqnum="20241021235958"/>
+</rows>
+</data>
+<data id="marketdata_yields">
+<metadata>
+<columns>
+<column name="boardid" type="string" bytes="12" max_size="0"/>
+<column name="secid" type="string" bytes="36" max_size="0"/>
+</columns>
+</metadata>
+<rows> </rows>
+</data>
+</document>

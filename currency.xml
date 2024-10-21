@@ -1,0 +1,108 @@
+<document>
+<data id="securities">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="SHORTNAME" type="string" bytes="30" max_size="0"/>
+<column name="LOTSIZE" type="int32"/>
+<column name="SETTLEDATE" type="date" bytes="10" max_size="0"/>
+<column name="DECIMALS" type="int32"/>
+<column name="FACEVALUE" type="double"/>
+<column name="MARKETCODE" type="string" bytes="12" max_size="0"/>
+<column name="MINSTEP" type="double"/>
+<column name="PREVDATE" type="date" bytes="10" max_size="0"/>
+<column name="SECNAME" type="string" bytes="90" max_size="0"/>
+<column name="REMARKS" type="string" bytes="24" max_size="0"/>
+<column name="STATUS" type="string" bytes="3" max_size="0"/>
+<column name="FACEUNIT" type="string" bytes="12" max_size="0"/>
+<column name="PREVPRICE" type="double"/>
+<column name="PREVWAPRICE" type="double"/>
+<column name="CURRENCYID" type="string" bytes="12" max_size="0"/>
+<column name="LATNAME" type="string" bytes="90" max_size="0"/>
+<column name="LOTDIVIDER" type="int32"/>
+</columns>
+</metadata>
+<rows>
+<row SECID="KZTRUB_TOM" BOARDID="CETS" SHORTNAME="KZTRUB_TOM" LOTSIZE="10000" SETTLEDATE="2024-10-22" DECIMALS="4" FACEVALUE="100" MARKETCODE="CURR" MINSTEP="0.0025" PREVDATE="2024-10-18" SECNAME="KZT/RUB_TOM - KZT/РУБ" REMARKS="" STATUS="A" FACEUNIT="KZT" PREVPRICE="19.8675" PREVWAPRICE="19.8739" CURRENCYID="RUB" LATNAME="KZT/RUB_TOM - KZT/RUB" LOTDIVIDER="1"/>
+<row SECID="KZTRUB_TOM" BOARDID="CNGD" SHORTNAME="KZTRUB_TOM" LOTSIZE="10000" SETTLEDATE="2024-10-22" DECIMALS="4" FACEVALUE="100" MARKETCODE="CURR" MINSTEP="0.0001" PREVDATE="2024-10-18" SECNAME="KZT/RUB_TOM - KZT/РУБ" REMARKS="" STATUS="A" FACEUNIT="KZT" PREVPRICE="19.9" PREVWAPRICE="19.9" CURRENCYID="RUB" LATNAME="KZT/RUB_TOM - KZT/RUB" LOTDIVIDER="1"/>
+<row SECID="KZTRUB_TOM" BOARDID="LICU" SHORTNAME="KZTRUB_TOM" LOTSIZE="10000" SETTLEDATE="2024-10-22" DECIMALS="4" FACEVALUE="100" MARKETCODE="CURR" MINSTEP="0.0001" PREVDATE="2024-10-18" SECNAME="KZT/RUB_TOM - KZT/РУБ" REMARKS="" STATUS="A" FACEUNIT="KZT" PREVPRICE="" PREVWAPRICE="" CURRENCYID="RUB" LATNAME="KZT/RUB_TOM - KZT/RUB" LOTDIVIDER="1"/>
+</rows>
+</data>
+<data id="marketdata">
+<metadata>
+<columns>
+<column name="HIGHBID" type="undefined" bytes="0" max_size="0"/>
+<column name="BIDDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="LOWOFFER" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFERDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="SPREAD" type="double"/>
+<column name="HIGH" type="double"/>
+<column name="LOW" type="double"/>
+<column name="OPEN" type="double"/>
+<column name="LAST" type="double"/>
+<column name="LASTCNGTOLASTWAPRICE" type="double"/>
+<column name="VALTODAY" type="int64"/>
+<column name="VOLTODAY" type="double"/>
+<column name="VALTODAY_USD" type="int64"/>
+<column name="WAPRICE" type="double"/>
+<column name="WAPTOPREVWAPRICE" type="double"/>
+<column name="CLOSEPRICE" type="double"/>
+<column name="NUMTRADES" type="int32"/>
+<column name="TRADINGSTATUS" type="string" bytes="3" max_size="0"/>
+<column name="UPDATETIME" type="time" bytes="10" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="WAPTOPREVWAPRICEPRCNT" type="double"/>
+<column name="BID" type="undefined" bytes="0" max_size="0"/>
+<column name="BIDDEPTHT" type="undefined" bytes="0" max_size="0"/>
+<column name="NUMBIDS" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFER" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFERDEPTHT" type="undefined" bytes="0" max_size="0"/>
+<column name="NUMOFFERS" type="undefined" bytes="0" max_size="0"/>
+<column name="CHANGE" type="double"/>
+<column name="LASTCHANGEPRCNT" type="double"/>
+<column name="VALUE" type="double"/>
+<column name="VALUE_USD" type="double"/>
+<column name="SEQNUM" type="int64"/>
+<column name="QTY" type="int32"/>
+<column name="TIME" type="time" bytes="10" max_size="0"/>
+<column name="PRICEMINUSPREVWAPRICE" type="double"/>
+<column name="LASTCHANGE" type="double"/>
+<column name="LASTTOPREVPRICE" type="double"/>
+<column name="VALTODAY_RUR" type="int64"/>
+<column name="SYSTIME" type="datetime" bytes="19" max_size="0"/>
+<column name="MARKETPRICE" type="double"/>
+<column name="MARKETPRICETODAY" type="double"/>
+<column name="MARKETPRICE2" type="double"/>
+<column name="ADMITTEDQUOTE" type="double"/>
+<column name="LOPENPRICE" type="double"/>
+</columns>
+</metadata>
+<rows>
+<row HIGHBID="" BIDDEPTH="" LOWOFFER="" OFFERDEPTH="" SPREAD="0" HIGH="20" LOW="19.85" OPEN="19.85" LAST="19.975" LASTCNGTOLASTWAPRICE="0" VALTODAY="83037999" VOLTODAY="416460000" VALTODAY_USD="861236" WAPRICE="19.939" WAPTOPREVWAPRICE="0.0651" CLOSEPRICE="" NUMTRADES="293" TRADINGSTATUS="N" UPDATETIME="19:00:00" BOARDID="CETS" SECID="KZTRUB_TOM" WAPTOPREVWAPRICEPRCNT="0.33" BID="" BIDDEPTHT="" NUMBIDS="" OFFER="" OFFERDEPTHT="" NUMOFFERS="" CHANGE="0.1075" LASTCHANGEPRCNT="0" VALUE="1997.5" VALUE_USD="20.72" SEQNUM="20241022000525" QTY="1" TIME="18:59:50" PRICEMINUSPREVWAPRICE="0.1011" LASTCHANGE="0" LASTTOPREVPRICE="0.54" VALTODAY_RUR="83037999" SYSTIME="2024-10-22 00:05:25" MARKETPRICE="" MARKETPRICETODAY="" MARKETPRICE2="" ADMITTEDQUOTE="" LOPENPRICE=""/>
+<row HIGHBID="" BIDDEPTH="" LOWOFFER="" OFFERDEPTH="" SPREAD="0" HIGH="" LOW="" OPEN="" LAST="" LASTCNGTOLASTWAPRICE="0" VALTODAY="0" VOLTODAY="0" VALTODAY_USD="" WAPRICE="" WAPTOPREVWAPRICE="0" CLOSEPRICE="" NUMTRADES="0" TRADINGSTATUS="N" UPDATETIME="23:50:00" BOARDID="CNGD" SECID="KZTRUB_TOM" WAPTOPREVWAPRICEPRCNT="0" BID="" BIDDEPTHT="" NUMBIDS="" OFFER="" OFFERDEPTHT="" NUMOFFERS="" CHANGE="" LASTCHANGEPRCNT="0" VALUE="0" VALUE_USD="" SEQNUM="20241022000525" QTY="0" TIME="23:50:00" PRICEMINUSPREVWAPRICE="" LASTCHANGE="0" LASTTOPREVPRICE="0" VALTODAY_RUR="" SYSTIME="2024-10-22 00:05:25" MARKETPRICE="" MARKETPRICETODAY="" MARKETPRICE2="" ADMITTEDQUOTE="" LOPENPRICE=""/>
+<row HIGHBID="" BIDDEPTH="" LOWOFFER="" OFFERDEPTH="" SPREAD="0" HIGH="" LOW="" OPEN="" LAST="" LASTCNGTOLASTWAPRICE="0" VALTODAY="0" VOLTODAY="0" VALTODAY_USD="" WAPRICE="" WAPTOPREVWAPRICE="0" CLOSEPRICE="" NUMTRADES="0" TRADINGSTATUS="N" UPDATETIME="23:50:00" BOARDID="LICU" SECID="KZTRUB_TOM" WAPTOPREVWAPRICEPRCNT="0" BID="" BIDDEPTHT="" NUMBIDS="" OFFER="" OFFERDEPTHT="" NUMOFFERS="" CHANGE="" LASTCHANGEPRCNT="0" VALUE="0" VALUE_USD="" SEQNUM="20241022000525" QTY="0" TIME="23:50:00" PRICEMINUSPREVWAPRICE="" LASTCHANGE="0" LASTTOPREVPRICE="0" VALTODAY_RUR="" SYSTIME="2024-10-22 00:05:25" MARKETPRICE="" MARKETPRICETODAY="" MARKETPRICE2="" ADMITTEDQUOTE="" LOPENPRICE=""/>
+</rows>
+</data>
+<data id="dataversion">
+<metadata>
+<columns>
+<column name="data_version" type="int32"/>
+<column name="seqnum" type="int64"/>
+</columns>
+</metadata>
+<rows>
+<row data_version="11161" seqnum="20241021210005"/>
+</rows>
+</data>
+<data id="marketdata_yields">
+<metadata>
+<columns>
+<column name="boardid" type="string" bytes="12" max_size="0"/>
+<column name="secid" type="string" bytes="36" max_size="0"/>
+</columns>
+</metadata>
+<rows> </rows>
+</data>
+</document>
